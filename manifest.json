@@ -1,7 +1,7 @@
 {
     "name": "Port Knocking",
-    "description": "A simple port knocking Chrome Extension usualily used to open a port in a firewall. This is a free and open source software powered Aupi",
-    "version": "0.1",
+    "description": "A simple port knocking Chrome Extension usualily used to open a port in a firewall.",
+    "version": "0.1.1.1",
     "manifest_version": 3,
     "icons": {
         "16": "app_icon.png",
@@ -12,16 +12,8 @@
 
     "action": {
         "default_popup": "popup.html"
-
     },
     "permissions": [
-        "storage",
-        "activeTab",
-        "scripting",
-        "tabs"
-    ],
-    "host_permissions": [
-        "http://*/*",
-        "https://*/*"
+        "scripting"
     ]
 }
