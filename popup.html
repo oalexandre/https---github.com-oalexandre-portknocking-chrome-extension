@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Port Knocking</title>
+    
+    <link rel="stylesheet" href="pure-min.css">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            min-width: 400px;
+            padding: 20px;
+        }
+
+        #inputKnock,
+        #checkPage {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        #resultDiv {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pure-g">
+        <div id="formDiv" class="pure-u-5-5">
+            <h1>Port Knocking</h1>
+            <p>Paste above your address and ports to knock in format:
+                </br>
+                </br><b>[SERVER_ADDRESS] [PORT1] [PORT2] ... [PORTn]</b>
+                </br>Ex: your_server.com 123 1233 431 4521</p>
+            <input id="inputKnock"><br>
+            <button id="checkPage" class="pure-button pure-button-primary">Knock Knock</button>
+            <p>
+                <small>Powered by <a href="https://www.aupi.com.br" target="_blank">Aupi</a></small>
+            </p>
+        </div>
+
+        <div id="resultDiv" class="pure-u-5-5">
+            <h1>Knokinck</h1>
+            <div>
+
+                <p>Knocking content</p>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
